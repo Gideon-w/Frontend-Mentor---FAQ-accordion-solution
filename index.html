@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | FAQ accordion</title>
+  </head>
+  <body>
+    <header class="header" aria-label="Page header"></header>
+
+    <main class="main" role="main">
+      <h1 class="heading-primary">
+        <img class="star" src="./assets/images/icon-star.svg" alt="star icon" />
+        FAQs
+      </h1>
+
+      <section class="faq-list" aria-label="Frequently Asked Questions">
+        <details class="faq-item">
+          <summary class="faq-title" aria-expanded="false">
+            <h2>What is Frontend Mentor, and how will it help me?</h2>
+            <img
+              class="faq-icon"
+              src="./assets/images/icon-plus.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </summary>
+          <p class="faq-body">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-title" aria-expanded="false">
+            <h2>Is Frontend Mentor free?</h2>
+            <img
+              class="faq-icon"
+              src="./assets/images/icon-plus.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </summary>
+          <p class="faq-body">
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-title" aria-expanded="false">
+            <h2>Can I use Frontend Mentor projects in my portfolio?</h2>
+            <img
+              class="faq-icon"
+              src="./assets/images/icon-plus.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </summary>
+          <p class="faq-body">
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-title" aria-expanded="false">
+            <h2>
+              How can I get help if I'm stuck on a Frontend Mentor challenge?
+            </h2>
+            <img
+              class="faq-icon"
+              src="./assets/images/icon-plus.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </summary>
+          <p class="faq-body">
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      <div class="mentor">
+        <span>Challenge by:</span>
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >
+      </div>
+      <div class="coder">
+        <span>Coded by:</span>
+        <a href="https://www.frontendmentor.io/profile/Gideon-w" target="_blank"
+          >Gideon-w</a
+        >
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll("details").forEach((detail) => {
+        const summary = detail.querySelector("summary");
+        const icon = summary.querySelector(".faq-icon");
+
+        detail.addEventListener("toggle", () => {
+          const isOpen = detail.hasAttribute("open");
+          summary.setAttribute("aria-expanded", isOpen);
+
+          if (isOpen) {
+            icon.src = "./assets/images/icon-minus.svg";
+          } else {
+            icon.src = "./assets/images/icon-plus.svg";
+          }
+        });
+
+        summary.setAttribute("aria-expanded", detail.hasAttribute("open"));
+        icon.src = detail.hasAttribute("open")
+          ? "./assets/images/icon-minus.svg"
+          : "./assets/images/icon-plus.svg";
+      });
+    </script>
+  </body>
+</html>
