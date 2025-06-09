@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![FAQ Accordion Screenshot](./Frontend-Mentor---FAQ-accordion-solution/blob/main/Screenshot.png)
+![FAQ Accordion Screenshot](./Screenshot.png)
 
 ### Links
 
