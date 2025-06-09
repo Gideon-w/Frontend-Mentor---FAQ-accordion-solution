@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [(https://github.com/Gideon-w/Frontend-Mentor---FAQ-accordion-solution/](https://github.com/Gideon-w/Frontend-Mentor---FAQ-accordion-solution/)
-- Live Site URL: [https://gideon-w.github.io/Frontend-Mentor---FAQ-accordion-solution/]([https://gideon-w.github.io/faq-accordion/](https://gideon-w.github.io/Frontend-Mentor---FAQ-accordion-solution/))
+- Solution URL: [Frontend-Mentor---FAQ-accordion-solution](https://github.com/Gideon-w/Frontend-Mentor---FAQ-accordion-solution/)
+- Live Site URL: [Frontend-Mentor---FAQ-accordion-site](https://gideon-w.github.io/Frontend-Mentor---FAQ-accordion-solution/)
 
 ## My process
 
